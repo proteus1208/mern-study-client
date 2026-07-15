@@ -1,14 +1,17 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
 import { Provider } from 'react-redux'
 import store from './redux/store'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
+// pages
 import Home from './pages/Home'
 import Login from './pages/auth/Login'
 import Register from './pages/auth/Login'
+
+// import tailwindcss from "@tailwindcss/vite";
+import './App.css'
+import "./index.css";
 
 function App() {
   const [count, setCount] = useState(0)
