@@ -9,11 +9,17 @@ export default defineConfig({
   ],
 
   server: {
+    host: "127.0.0.1", // Avoid localhost DNS lookup (Astrill)
     port: 5173,
+
+    hmr: {
+      host: "127.0.0.1",
+      protocol: "ws",
+    },
 
     proxy: {
       "/api": {
-        target: "http://localhost:3000",
+        target: "http://127.0.0.1:3000", // Express backend
         changeOrigin: true,
       },
     },
