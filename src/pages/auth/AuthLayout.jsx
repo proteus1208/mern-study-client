@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 export default function AuthLayout({ children }) {
     return (
         <div className="auth-layout">
-            <div className="auth-header flex px-[124px] py-[40px]">
+            <div className="auth-header flex px-[124px] py-[40px] relative z-[20]">
                 <Link to="/" className="logo flex items-center h-[60px]">
                     <img 
                         src={img_logo} 
