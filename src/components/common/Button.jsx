@@ -82,6 +82,7 @@ export default function Button({
                 duration-300
                 disabled:opacity-50
                 disabled:cursor-not-allowed
+                whitespace-nowrap
 
                 ${sizes[variant]}
                 ${variants[variant]}
