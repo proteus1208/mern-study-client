@@ -32,10 +32,6 @@ export default function AuthLayout({ children }) {
                 className="absolute top-[258px] left-[148px] w-[383px] h-[383px] hidden lg:block"
             />
 
-            <div className="hidden lg:flex lg:w-5/12">
-
-            </div>
-
             <div className="w-full lg:w-7/12">
                 {children}
             </div>
