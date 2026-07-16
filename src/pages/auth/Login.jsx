@@ -51,7 +51,7 @@ export default function Login() {
           className="leading-[120%] text-center"
           color='#372A2A'
         >
-          Create Account
+          Log in
         </Typography>
 
         <Typography
